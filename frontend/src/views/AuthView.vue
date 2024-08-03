@@ -101,9 +101,6 @@ const onSignUp = async () => {
     }
 }
 
-const test = () => {
-    console.log("works 😅")
-}
 </script>
 <template>
     <main class="container mx-auto">
