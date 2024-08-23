@@ -12,8 +12,8 @@ const app = express()
 const port = 5175
 const URI = process.env.SUPERTOKENS_URI
 const KEY = process.env.SUPERTOKENS_KEY
-const apiDomain = process.env.NODE_ENV == "Production" ? process.env.API_DOMAIN : "http://localhost:5175";
-const websiteDomain = process.env.NODE_ENV == "Production" ? process.env.WEBSITE_DOMAIN : "http://localhost:5173";
+const apiDomain = process.env.NODE_ENV === "production" ? process.env.API_DOMAIN : "http://localhost:5175";
+const websiteDomain = process.env.NODE_ENV === "production" ? process.env.WEBSITE_DOMAIN : "http://localhost:5173";
 
 
 supertokens.init({
