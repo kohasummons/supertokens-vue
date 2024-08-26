@@ -13,7 +13,6 @@
     "format": "prettier --write src/"
   },
   "dependencies": {
-    "supertokens-web-js": "^0.12.0",
     "vue": "^3.4.29",
     "vue-router": "^4.3.3"
   },

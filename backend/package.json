@@ -12,7 +12,6 @@
   "license": "ISC",
   "dependencies": {
     "cors": "^2.8.5",
-    "express": "^4.19.2",
-    "supertokens-node": "^18.0.2"
+    "express": "^4.19.2"
   }
 }

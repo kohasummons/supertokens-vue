@@ -1,6 +1,5 @@
 import { createRouter, createWebHistory } from 'vue-router'
 import HomeView from '../views/HomeView.vue'
-import Session from 'supertokens-web-js/recipe/session';
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
@@ -31,14 +30,6 @@ const router = createRouter({
   ]
 })
 
-router.beforeEach(async (to, from, next) => {
-  if (to.name === 'user' && !(await Session.doesSessionExist())) next({ name: 'auth' })
-    else next();
-})
-
-router.beforeEach(async (to, from, next) => {
-  if (to.name == 'auth' && (await Session.doesSessionExist())) next({ name: 'user' })
-    else next()
-})
+// Add Navigation guard to UserView page
 
 export default router
