@@ -22,7 +22,7 @@ const handleClick = () => {
             <span class="relative text-base font-semibold">{{ label }}</span>
         </span>
         <span
-            class="absolute bottom-0 right-0 w-full h-9 -mb-1 -mr-1 transition-all duration-200 ease-linear bg-indigo-600 rounded-lg group-hover:mb-0 group-hover:mr-0 group-hover:mb-2"
+            class="absolute bottom-0 right-0 w-full h-9 -mb-1 -mr-1 transition-all duration-200 ease-linear bg-indigo-600 rounded-lg group-hover:mr-0 group-hover:mb-2"
             data-rounded="rounded-lg"></span>
     </button>
 </template>

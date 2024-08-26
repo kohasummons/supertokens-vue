@@ -8,6 +8,8 @@ import { createApp } from 'vue'
 import App from './App.vue'
 import router from './router'
 
+// Set API domain to production URL if in production mode, 
+// otherwise use local development URL.
 const apiDomain = import.meta.env.PROD ? import.meta.env.VITE_API_DOMAIN : "http://localhost:5175";
 
 SuperTokens.init({

@@ -31,6 +31,10 @@ header {
   max-height: 100vh;
 }
 
+.wrapper {
+  @apply mb-14
+}
+
 .logo {
   margin: 0 auto 2rem;
 }
