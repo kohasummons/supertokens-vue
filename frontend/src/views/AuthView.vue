@@ -11,7 +11,6 @@ const email = ref('');
 const password = ref('');
 
 const onSignIn = async () => {
-    console.log(email.value, password.value);
     if (!email.value || !password.value) return
 
     try {
@@ -55,8 +54,6 @@ const onSignIn = async () => {
 }
 
 const onSignUp = async () => {
-    console.log(email.value, password.value);
-
     try {
         let response = await signUp({
             formFields: [{

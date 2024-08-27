@@ -70,11 +70,9 @@ app.get("/user", verifySession(), async (req, res) => {
          * 
         */
     
-        console.log(userInfo)
         res.status(200).json(userInfo)
 
     } catch (error) {
-        console.log(error)
         res.status(401).json({ error: "Unauthorized" })
     }
 
