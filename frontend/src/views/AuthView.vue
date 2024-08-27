@@ -105,7 +105,7 @@ const onSignUp = async () => {
             <input type="email" v-model="email"
                 class="block w-full max-w-xs px-4 py-2 text-sm font-normal shadow-xs text-white bg-transparent border border-gray-300 rounded-lg placeholder-gray-400 focus:outline-none leading-relaxed "
                 placeholder="email">
-            <input type="email" v-model="password"
+            <input type="password" v-model="password"
                 class="block w-full max-w-xs px-4 py-2 text-sm font-normal shadow-xs text-white-900 bg-transparent border border-gray-300 rounded-lg placeholder-gray-400 focus:outline-none leading-relaxed "
                 placeholder="password">
             <div>
